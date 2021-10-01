@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 18px;
+}
+body{
+    font-family: 'kumb sans',sans-serif;
+    color: hsl(0,11% , 12%);
+}
+.body {
+margin-bottom: 35px;
+}
+.container{
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card{
+    width: 350px;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+} 
+.img-holder{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -50px auto 30px auto ;
+    
+}
+.img-holder img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+
+}
+.name{
+    font-size: 1rem;
+    margin-bottom: 15px;
+
+}
+.age{
+    padding-left: 7px;
+}
+.age,.city,.meta{
+    font-weight: 400;
+    color: hsl(0, 11%, 12%);
+    opacity: .6;
+}
+/* .city{
+    margin-bottom: 35px;
+} */
+
+.footer{
+    border-top: 1px solid hsl(0, 0%, 76%);
+    display: flex;
+
+}
+.footer .item{
+    display: flex;
+    flex: 1;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer .item .value{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+.footer .item .meta{
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+.circle .c1, .circle .c2{
+    position: absolute;
+}
+.c1{
+    top: -550px;
+    left: -300px;
+}
+.c2{
+    bottom: -650px;
+    right: -325px;;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media (min-device-width:1024px) and (max-device-width : 1334px) {
+      .c1 {
+          top: -265px;
+          left: -428px;
+      }
+      .c2{
+          bottom: -335px;
+          right:-404px
+      }
+  }
+  @media (min-device-width:414px) and (max-device-width : 1023px) {
+    .c1 {
+        top: -585px;
+        left: -760px;
+    }
+    .c2{
+        bottom: -635px;
+        right:-714px
+    }
+    .card{
+        width: 350px ;
+    }
+}
